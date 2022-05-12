@@ -1,6 +1,6 @@
 # Wiper Control System
 
-## Introduction:
+## Introduction
 
 ### Description
 
