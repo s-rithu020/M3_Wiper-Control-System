@@ -60,8 +60,8 @@ all: main-build
 main-build: WiperControl.elf secondary-outputs
 
 # Tool invocations
-WiperControl.elf WiperControl.map: $(OBJS) $(USER_OBJS) F:\LTTS\MODULE\ 3_Getting\ Started\ with\ ARM\ Based\ Microcontrollers\reference\ github\ repos\M3_WiperControlSystem-main\ -\ herenajoshika\3_Implementation\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "WiperControl.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"F:\LTTS\MODULE 3_Getting Started with ARM Based Microcontrollers\reference github repos\M3_WiperControlSystem-main - herenajoshika\3_Implementation\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="WiperControl.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+WiperControl.elf WiperControl.map: $(OBJS) $(USER_OBJS) D:\STM32CubeIDE\workspace_1.9.0\WiperControl\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "WiperControl.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\STM32CubeIDE\workspace_1.9.0\WiperControl\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="WiperControl.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
