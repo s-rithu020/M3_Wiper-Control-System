@@ -2,6 +2,9 @@
 
 https://user-images.githubusercontent.com/70939522/168465680-df0564a6-cb67-4556-a6de-fc043fc42670.mp4
 
+
+### Explanation:
+
 The project is written and built on STM32CubeIDE and is simulated using Qemu. The project is also run on Linux CLI using WSL.
 
 When the pushbutton on the board is first pressed, the Red LED turns on. This signifies that the ignition of the car is in ACC mode. 
