@@ -14,12 +14,12 @@ The Wiper Control System is an automated system present in an automotive vehicle
 * The car is considered turned off when the pushbutton is long-pressed again.
 
 ### Objectives:
-* When the pushbutton is long-pressed for two seconds, the car will start and the Red LED on the microcontroller will turn ON and stays in that state.
+* When the pushbutton is pressed for two seconds, the car will start and the Red LED on the microcontroller will turn ON and stays in that state.
 * When the pushbutton is pressed next, the Blue, Green and Orange LEDs turn on, one at a time, at slow speed.
 * When the pushbutton is pressed for the second time, the speed of the three LEDs increases to medium speed.
 * When the pushbutton is pressed for the third time, the speed of the three LEDs increases to fast speed.
-* At the fourth press of the pushbutton, all three LEDs turn off.
-* To turn off the car, the pushbutton is long-pressed again, which turns off the Red LED.
+* At the fourth press of the pushbutton, the three LEDs light up anti-clockwise and turn off.
+* To turn off the car, the pushbutton is pressed again, which turns off the Red LED.
 
 ### Features:
 * The speed of the wipers can be controlled with the push of a button.
@@ -63,12 +63,13 @@ The speeds of the wiper blades can be controlled using a knob by the steering wh
 
 | ID | Description | HLR_ID |
 | ---- | -------------- | ----- |
-| LR01 | The car should start at long-press (2 seconds) of pushbutton  | HLR01 |
+| LR01 | The car should start by pressing the pushbutton  | HLR01 |
 | LR02 | The Red LED should turn ON indicating the start of the car  | HLR01 |
-| LR03 | The car should turn off at long-press (2 seconds) of pushbutton  | HLR01 |
+| LR03 | The car should turn off by pressing the pushbutton  | HLR01 |
 | LR04 | The Red LED should turn OFF indicating the stop of the car  | HLR01 |
 | LR05 | When pushbutton is pressed all three LEDs (Blue, Green, Orange) turn ON one at a time | HLR02 |
-| LR06 | When the pushbutton is pressed for first time, the speed of LEDs is slow | HLR03 |
-| LR07 | When the pushbutton is pressed for second time, the speed of LEDs is medium | HLR03 |
-| LR08 | When the pushbutton is pressed for third time, the speed of LEDs is fast | HLR03 |
-| LR09 | All three LEDs should turn off when the pushbutton is pressed for fourth time | HLR04 |
+| LR06 | When the pushbutton is pressed for first time (long-press), the speed of LEDs is slow | HLR03 |
+| LR07 | When the pushbutton is pressed for second time (long-press), the speed of LEDs is medium | HLR03 |
+| LR08 | When the pushbutton is pressed for third time (long-press), the speed of LEDs is fast | HLR03 |
+| LR09 | All three LEDs should light up anti-clockwise when the pushbutton is pressed for fourth time | HLR04 |
+| LR10 | All three LEDs should turn off when the pushbutton is pressed for fourth time | HLR04 |
