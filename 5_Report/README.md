@@ -1,16 +1,5 @@
 # Wiper Control System
 
-## Abstract
-The Wiper Control System is an automated system present in an automotive vehicle, such as a car, which keeps the windshield of the vehicle clear from rain water, dust, snow and road spray. The Wiper Control System controls the windshield wipers of the vehicle. 
-
-Previous vehicle designs had wipers that had to be operated manually by moving a lever inside a car. Nowadays, almost all vehicles utilize an electric motor and are activated and controlled by a knob beside the steering wheel. The wiper blade speed can be adjusted by the driver. 
-
-Most of the cars have two wipers systems on the windshield, one on the rear window and the other on each headlight. The wipers have various observable parts such as the rubber blade, the wiper
-arm holding the blade, a spring linkage, and parts of the wiper pivots. The wiper itself has six parts known as claws which are small arms under the wiper. The automotive wipers are controlled by a microcontroller.
-
-Many wiper systems in cars today use a rain sensor to detect the speed at which the raindrops are falling on the windshield. A microcontroller or microprocessor evaluates the signals from the sensor to calculate the speed at which the wipers should move.
-
-
 ## Introduction
 The Wiper Control System is an automated system present in an automotive vehicle, such as a car, which keeps the windshield of the vehicle clear from rain water, dust, snow and road spray. The Wiper Control System controls the windshield wipers of the vehicle. Previous vehicle designs had wipers that had to be operated manually by moving a lever inside a car. Nowadays, almost all vehicles utilize an electric motor and are activated and controlled by a knob beside the steering wheel. The wiper blade speed can be adjusted by the driver. The automotive wipers are controlled by a microcontroller. In this project, we attempt to simulate the working of a Wiper Control System using the ARM STM32 microcontroller.
 
@@ -23,15 +12,15 @@ The Wiper Control System is an automated system present in an automotive vehicle
 * The ignition point is taken as the pushbutton as well.
 * The car starts when the key is inserted into the ignition and turned to ACC. This operation is assumed as the long-press of the pushbutton.
 * Subsquent presses of the pushbutton will be used for controlling the speed on the wiper blades.
-* The car is considered turned off when the pushbutton is long-pressed again.
+* The car is considered turned off when the pushbutton is pressed again.
 
 ### Objectives:
-* When the pushbutton is long-pressed for two seconds, the car will start and the Red LED on the microcontroller will turn ON and stays in that state.
+* When the pushbutton is pressed, the car will start and the Red LED on the microcontroller will turn ON and stays in that state.
 * When the pushbutton is pressed next, the Blue, Green and Orange LEDs turn on, one at a time, at slow speed.
 * When the pushbutton is pressed for the second time, the speed of the three LEDs increases to medium speed.
 * When the pushbutton is pressed for the third time, the speed of the three LEDs increases to fast speed.
-* At the fourth press of the pushbutton, all three LEDs turn off.
-* To turn off the car, the pushbutton is long-pressed again, which turns off the Red LED.
+* At the fourth press of the pushbutton, the three LEDs light up anti-clockwise and turn off.
+* To turn off the car, the pushbutton is pressed again, which turns off the Red LED.
 
 ### Features:
 * The speed of the wipers can be controlled with the push of a button.
@@ -76,15 +65,16 @@ The speeds of the wiper blades can be controlled using a knob by the steering wh
 
 | ID | Description | HLR_ID |
 | ---- | -------------- | ----- |
-| LR01 | The car should start at long-press (2 seconds) of pushbutton  | HLR01 |
+| LR01 | The car should start by pressing the pushbutton  | HLR01 |
 | LR02 | The Red LED should turn ON indicating the start of the car  | HLR01 |
-| LR03 | The car should turn off at long-press (2 seconds) of pushbutton  | HLR01 |
+| LR03 | The car should turn off by pressing the pushbutton  | HLR01 |
 | LR04 | The Red LED should turn OFF indicating the stop of the car  | HLR01 |
 | LR05 | When pushbutton is pressed all three LEDs (Blue, Green, Orange) turn ON one at a time | HLR02 |
-| LR06 | When the pushbutton is pressed for first time, the speed of LEDs is slow | HLR03 |
-| LR07 | When the pushbutton is pressed for second time, the speed of LEDs is medium | HLR03 |
-| LR08 | When the pushbutton is pressed for third time, the speed of LEDs is fast | HLR03 |
-| LR09 | All three LEDs should turn off when the pushbutton is pressed for fourth time | HLR04 |
+| LR06 | When the pushbutton is pressed for first time (long-press), the speed of LEDs is slow | HLR03 |
+| LR07 | When the pushbutton is pressed for second time (long-press), the speed of LEDs is medium | HLR03 |
+| LR08 | When the pushbutton is pressed for third time (long-press), the speed of LEDs is fast | HLR03 |
+| LR09 | All three LEDs should light up anti-clockwise when the pushbutton is pressed for fourth time | HLR04 |
+| LR10 | All three LEDs should turn off when the pushbutton is pressed for fourth time | HLR04 |
 
 
 # Architecture
