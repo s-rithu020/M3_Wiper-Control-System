@@ -16,6 +16,7 @@ The Wiper Control System is an automated system present in an automotive vehicle
 ## Continuous Integration and Code Quality
 | Build on Linux | Build on Windows | Code Quality | Codacy | Codiga |
 | --- | --- | --- | --- | --- |
+| [![Linux CI](https://github.com/s-rithu020/M3_Wiper-Control-System/actions/workflows/linux-CI.yml/badge.svg)](https://github.com/s-rithu020/M3_Wiper-Control-System/actions/workflows/linux-CI.yml) | [![Windows CI](https://github.com/s-rithu020/M3_Wiper-Control-System/actions/workflows/windows.yml/badge.svg)](https://github.com/s-rithu020/M3_Wiper-Control-System/actions/workflows/windows.yml) | [![Code Quality - Static Code - Cppcheck](https://github.com/s-rithu020/M3_Wiper-Control-System/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/s-rithu020/M3_Wiper-Control-System/actions/workflows/cppcheck.yml) |  |
 
 ## Folder Structure
 Folders                | Description
