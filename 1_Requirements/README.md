@@ -3,13 +3,14 @@
 ## Introduction
 The Wiper Control System is an automated system present in an automotive vehicle, such as a car, which keeps the windshield of the vehicle clear from rain water, dust, snow and road spray. The Wiper Control System controls the windshield wipers of the vehicle. Previous vehicle designs had wipers that had to be operated manually by moving a lever inside a car. Nowadays, almost all vehicles utilize an electric motor and are activated and controlled by a knob beside the steering wheel. The wiper blade speed can be adjusted by the driver. The automotive wipers are controlled by a microcontroller. In this project, we attempt to simulate the working of a Wiper Control System using the ARM STM32 microcontroller.
 
+
 ## Research
 ### Assumptions:
 * The wiper blades are assumed as LEDs.
 * The motion of the wiper blades are demonstrated by three LEDs i.e. Blue, Green and Orange LEDs.
 * The wiper knob, which controls the speed of the wiper blades, is assumed to be the pushbutton.
 * The ignition point is taken as the pushbutton as well.
-* The car starts when the key is inserted into the ignition and turned to ACC. This operation is assumed as the long-press of the pushbutton.
+* The car starts when the key is inserted into the ignition and turned to ACC. This operation is assumed as the press of the pushbutton.
 * Subsquent presses of the pushbutton will be used for controlling the speed on the wiper blades.
 * The car is considered turned off when the pushbutton is pressed again.
 
@@ -27,6 +28,7 @@ The Wiper Control System is an automated system present in an automotive vehicle
 * The wiper always comes back to rest at its original position even when switched off during operation.
 * It functions automatically.
 
+
 ## SWOT Analysis
 ![swot_analysis](https://user-images.githubusercontent.com/70939522/168444678-63f457e0-040f-4ea2-be6f-16d8056aad18.png)
 
@@ -36,7 +38,7 @@ The Wiper Control System is an automated system present in an automotive vehicle
 The system is employed in all automotive vehicles to provide safety and clear visibilty to the passengers of the vehicle.
 
 ### What:
-A Wiper Control System is an automated system whihc controls the speed of the windshield wiper blades.
+A Wiper Control System is an automated system which controls the speed of the windshield wiper blades.
 
 ### When:
 It is used to automatically clean the windscreen of the vehicle during rain or snow and to prevent the driver from distractions.
@@ -68,7 +70,7 @@ The speeds of the wiper blades can be controlled using a knob by the steering wh
 | LR03 | The car should turn off by pressing the pushbutton  | HLR01 |
 | LR04 | The Red LED should turn OFF indicating the stop of the car  | HLR01 |
 | LR05 | When pushbutton is pressed all three LEDs (Blue, Green, Orange) turn ON one at a time | HLR02 |
-| LR06 | When the pushbutton is pressed for first time (long-press), the speed of LEDs is slow | HLR03 |
+| LR06 | When the pushbutton is pressed for first time, the speed of LEDs is slow | HLR03 |
 | LR07 | When the pushbutton is pressed for second time (long-press), the speed of LEDs is medium | HLR03 |
 | LR08 | When the pushbutton is pressed for third time (long-press), the speed of LEDs is fast | HLR03 |
 | LR09 | All three LEDs should light up anti-clockwise when the pushbutton is pressed for fourth time | HLR04 |
