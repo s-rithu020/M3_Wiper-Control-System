@@ -12,7 +12,7 @@ The Wiper Control System is an automated system present in an automotive vehicle
 * When the pushbutton is pressed for the second time, the speed of the three LEDs increases to medium speed.
 * When the pushbutton is pressed for the third time, the speed of the three LEDs increases to fast speed.
 * At the fourth press of the pushbutton, all three LEDs turn off.
-* To turn off the car, the pushbutton is long-pressed again, which turns off the Red LED.
+* To turn off the car, the pushbutton is pressed again, which turns off the Red LED.
 
 
 ## Continuous Integration and Code Quality
