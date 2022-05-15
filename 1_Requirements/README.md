@@ -11,10 +11,10 @@ The Wiper Control System is an automated system present in an automotive vehicle
 * The ignition point is taken as the pushbutton as well.
 * The car starts when the key is inserted into the ignition and turned to ACC. This operation is assumed as the long-press of the pushbutton.
 * Subsquent presses of the pushbutton will be used for controlling the speed on the wiper blades.
-* The car is considered turned off when the pushbutton is long-pressed again.
+* The car is considered turned off when the pushbutton is pressed again.
 
 ### Objectives:
-* When the pushbutton is pressed for two seconds, the car will start and the Red LED on the microcontroller will turn ON and stays in that state.
+* When the pushbutton is pressed, the car will start and the Red LED on the microcontroller will turn ON and stays in that state.
 * When the pushbutton is pressed next, the Blue, Green and Orange LEDs turn on, one at a time, at slow speed.
 * When the pushbutton is pressed for the second time, the speed of the three LEDs increases to medium speed.
 * When the pushbutton is pressed for the third time, the speed of the three LEDs increases to fast speed.
